@@ -16,6 +16,8 @@ while 1:
     ReceivedString = SerialObj.readline()
     data = ReceivedString.decode('utf-8')
     print(data.rstrip('\n'))
+    if '5' in data:
+        break
 
 
-#SerialObj.close()
+SerialObj.close()
